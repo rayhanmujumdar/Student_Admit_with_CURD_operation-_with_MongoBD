@@ -4,7 +4,7 @@ const notFoundHandler = (_req,_res,next) => {
     next(error)
 }
 
-const errorHandler = ( error,_req,_res,_next ) => {
+const errorHandler = ( error,_req,res,_next ) => {
     if(error.status){
         return res.status(error.status).json({
             message: error.message
