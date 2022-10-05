@@ -1,12 +1,19 @@
 require('dotenv').config()
 const express = require('express')
 const middleware = require('../middleware/middleware')
+const {notFoundHandler,errorHandler} = require('../error/routeError')
 const app = express()
 
 
 //middleware
 app.use(middleware)
 
-// error
+//routes
+app.use(require('../routes/health'))
 
-module.express = app
+// error
+app.use(notFoundHandler)
+app.use(errorHandler)
+
+
+module.exports = app
