@@ -25,6 +25,15 @@ Agenda:
 - Student Create and send to  the server his/her Data
 - Students update his/her data
 
+## Student Models Make:
+
+- student Id ( string ) - student id number
+- username (string) - student name
+- admitClass (number) - student class
+- studentRoll - (number) - student roll no
+- age - (number) - student age
+- AdmitDate - student admission date
+
 **API Routes:**
 
 - /students/create - POST - student create a his new data (admit student)
@@ -32,6 +41,8 @@ Agenda:
 - /students/:studnetId?role=admin - DELETE - admin only delete Student Data
 - /students - GET - get all student Data.
 
+
+## Install Project:
 **Package Install or middleware:**
 
 - Express.js
