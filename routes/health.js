@@ -6,6 +6,6 @@ router.get('/health',(req,res) => {
     })
 })
 
-router.use(status)
+router.use('/api/v1/students',status)
 
 module.exports = router
